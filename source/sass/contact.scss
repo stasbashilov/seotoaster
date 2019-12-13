@@ -1,0 +1,147 @@
+.contact {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background: white;
+
+    @media (max-width: 800px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $black;
+        font-size: 46px;
+        letter-spacing: 7px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__details {
+        font-size: 14px;
+        color: $gray;
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin: auto;
+        max-width: 385px;
+        background: $white;
+        position: absolute;
+        top: -35px;
+        bottom: auto;
+        left: 0;
+        right: 0;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        max-width: 726px;
+        line-height: 18px;
+        border: 2px solid $borderGray;
+        padding-bottom: 28px;
+        padding-top: 95px;
+
+        @media (max-width: 320px) {
+            padding-top: 150px;
+        }
+
+        @media (max-width: 800px) {
+            border: none;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 434px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: $gray;
+            position: relative;
+
+            &::after {
+                content: "*";
+                color: red;
+                position: absolute;
+                top: 35px;
+                bottom: auto;
+                right: 8px;
+                left: auto;
+                z-index: 10;
+            }
+        }
+
+        input {
+            box-sizing: border-box;
+            position: relative;
+            background: $inputGray;
+            color: $gray;
+            height: 50px;
+            border: 1px solid $inputBorderG;
+            padding-right: 18px;
+            padding-left: 10px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        ::placeholder {
+            color: $placeholderGray;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        textarea {
+            box-sizing: border-box;
+            background: $inputGray;
+            font-size: 18px;
+            line-height: 18px;
+            font-style: italic;
+            padding-top: 15px;
+            padding-left: 10px;
+            border: 1px solid $inputBorderG;
+            min-height: 120px;
+        }
+    }
+
+    .contact__input--alt {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        background: $purple;
+        padding: 16px 48px;
+        width: 100%;
+        max-width: 180px;
+        cursor: pointer;
+        transition: all 0.4s ease 0s;
+    }
+
+    &__button:hover {
+        background: $gray;
+        letter-spacing: 2px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+    }
+}

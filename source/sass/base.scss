@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+  background: white;
+  font-family:  'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.jumbotron {
+
+  img {
+    height: 1078px;
+    width: 100%;
+    object-fit: cover;
+
+    @media (max-width: 800px) {
+      height: auto;
+    }
+
+    @media (min-width: 801px) and (max-width: 1200px) {
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
